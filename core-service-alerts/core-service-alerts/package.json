@@ -1,0 +1,23 @@
+{
+  "name": "core-service-alerts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "common-module": "^1.4.0",
+    "mongoose": "^6.10.5",
+    "mongoose-delete": "^0.5.4",
+    "nodejs-license-file": "^4.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

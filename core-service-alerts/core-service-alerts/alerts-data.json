@@ -1,0 +1,100 @@
+{
+    "alertsData": [
+        {
+            "alertTitle": "water",
+            "alertBackgroundColor": "#338eba",
+            "alertForegroundColor": "#213675",
+            "alertIsOverlay": 0,
+            "alertMessage": "take water",
+            "alertPriority": 1
+        },
+        {
+            "alertTitle": "medicine",
+            "alertBackgroundColor": "#4f5659",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "take medicine",
+            "alertPriority": 4
+        },
+        {
+            "alertTitle": "BED",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "NEED&nbsp;WATER",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "CODE BLUE",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "CODE BLUE",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "STAFF EMERG",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "STAFF EMERG",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "RAIL DOWN",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "RAIL DOWN",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "BED EXIT",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "BED EXIT",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "NORMAL",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "NORMAL",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "PAIN",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "PAIN",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "BATHROOM",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "BATHROOM",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "BATHROOM FALL",
+            "alertBackgroundColor": "#6333ba",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "BATHROOM FALL",
+            "alertPriority": 2
+        },
+        {
+            "alertTitle": "weather",
+            "alertBackgroundColor": "#97b2d1",
+            "alertForegroundColor": "#f1f3f8",
+            "alertIsOverlay": 0,
+            "alertMessage": "change weather",
+            "alertPriority": 5
+        }
+    ]
+}

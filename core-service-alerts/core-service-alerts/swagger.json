@@ -1,0 +1,267 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "HCI CRUD Rest API documentation",
+    "description": "This is based on Alerts CRUD API documentation"
+  },
+  "servers": [
+    "http://localhost:6001"
+  ],
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Alerts",
+      "description": "API for Alerts"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/alerts": {
+      "post": {
+        "tags": [
+          "Alerts"
+        ],
+        "summary": "Alerts create Api",
+        "description": "\n**The below table defines the HTTP Status codes that this API may return**\n\n| Status Code      | Description | Reason                             |\n| ---------------- | ------------| -----------------------------------|\n| 201              | CREATED     | If a Alerts is created successfuly.   |\n| 400              | BAD REQUEST | If the request is not valid.       |\n| 500              | INTERNAL_SERVER_ERROR| Internal server error.    |\n",
+        "parameters": [
+          {
+            "name": "Alerts",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New alerts is created",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Alerts"
+        ],
+        "summary": "Alerts Data Get Api",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        }
+      }
+    },
+    "/alerts/{Id}": {
+      "parameters": [
+        {
+          "name": "Id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Alerts"
+        ],
+        "description": "\n**The below table defines the HTTP Status codes that this API may return**\n\n| Status Code      | Description | Reason                             |\n| ---------------- | ------------| -----------------------------------|\n| 201              | CREATED     | If a Alerts is Get successfuly.   |\n| 400              | BAD REQUEST | If the request is not valid.       |\n| 500              | INTERNAL_SERVER_ERROR| Internal server error.    |\n",
+        "responses": {
+          "200": {
+            "description": "Alerts is not found",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Alerts"
+        ],
+        "summary": "Alerts Update API",
+        "parameters": [
+          {
+            "name": "Alerts",
+            "in": "body",
+            "description": "Alerts with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            },
+            "parameters": {
+              "name": "Id",
+              "in": "path",
+              "description": "ID of the order that needs to be deleted"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alerts is updated",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Alerts"
+        ],
+        "summary": "Alerts Delete API",
+        "responses": {
+          "200": {
+            "description": "Alerts is deleted",
+            "schema": {
+              "$ref": "#/definitions/Alerts"
+            }
+          }
+        }
+      }
+    },
+    "/alertsAssign": {
+      "post": {
+        "tags": [
+          "AlertsAssign"
+        ],
+        "summary": "Alerts Assign Api",
+        "description": "\n**The below table defines the HTTP Status codes that this API may return**\n\n| Status Code      | Description | Reason                             |\n| ---------------- | ------------| -----------------------------------|\n| 201              | CREATED     | If a Alerts Assign successfuly.   |\n| 400              | BAD REQUEST | If the request is not valid.       |\n| 500              | INTERNAL_SERVER_ERROR| Internal server error.    |\n",
+        "parameters": [
+          {
+            "name": "Alerts",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AlertsAssign"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Alerts Assign successfuly",
+            "schema": {
+              "$ref": "#/definitions/AlertsAssign"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "AlertsAssign"
+        ],
+        "summary": "Alerts Assign Get Api",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/AlertsAssign"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Alerts": {
+      "type": "object",
+      "properties": {
+        "alertBackgroundColor": {
+          "type": "string",
+          "example": "61e7f2e84643e0391eeec497"
+        },
+        "alertForegroundColor": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertIsOverlay": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertMessage": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertCreatedAt": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertPriority": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertSender": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "alertTitle": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "iconurl": {
+          "type": "string",
+          "example": "145253215"
+        },
+        "ledId": {
+          "type": "string",
+          "example": "145253215"
+        }
+      }
+    },
+    "AlertsAssign": {
+      "type": "object",
+      "properties": {
+        "locationId": {
+          "type": "string",
+          "example": "1"
+        },
+        "patientId": {
+          "type": "string",
+          "example": "1"
+        },
+        "title": {
+          "type": "string",
+          "example": "Water"
+        },
+        "action": {
+          "type": "string",
+          "example": "set"
+        },
+        "actionstatus": {
+          "type": "string",
+          "example": "clear"
+        },
+        "sender": {
+          "type": "string",
+          "example": "JRD"
+        },
+        "alertsId": {
+          "type": "string",
+          "example": "61e7f2e84643e0391eeec497"
+        },
+        "is_Assign": {
+          "type": "Boolean",
+          "example": true
+        },
+        "event": {
+          "type": "string",
+          "example": "set"
+        }
+      }
+    }
+  }
+}
+
